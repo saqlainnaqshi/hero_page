@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Burger</title>
+<style>
+.div{
+padding: 7% 40% 7% 7%;
+border: 2px solid white;
+margin: 5%;
+background-image: url("./assets/1.jpg");
+background-size:100% 100%;
+background-repeat:no-repeat;
+color:white;
+border-radius:10px;
+font-family:cursive;
+text-align:justify;
+}
+
+button, button:hover{
+width:200px;
+height:40px;
+background-color: white;
+color: #eb8c34;
+border-radius:3px;
+border:2px solid white;
+font-family:verdana;
+}
+
+button:hover{
+background-color: #222222;
+color: #fff;
+}
+</style>
+
+</head>
+
+
+
+<body style="background-color:#eb8c34">
+
+<div class="div">
+
+
+<h1>This is a page for burgers</h1>
+<p><b>Mje andai wala burger</b></p>
+<p>A burger is a patty of ground beef grilled and placed between two halves of a bun. Slices of raw onion, lettuce, bacon, mayonnaise, and other ingredients add flavor. Burgers are considered an American food but are popular around the world. In Japan, teriyaki burgers are popular.</p>
+<button id="btn">Click Me</button>
+<!--<div id="secDiv"></div>-->
+
+</div>
+
+<script>
+
+let btn = document.querySelector("#btn")
+btn.addEventListener('click',()=>{
+para= document.createElement('p')
+para.innerText="Thankyou"
+document.querySelector(".div").appendChild(para)
+})
+
+</script>
+</body>
+
+
+</html>
